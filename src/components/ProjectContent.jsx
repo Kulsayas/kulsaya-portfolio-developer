@@ -33,7 +33,7 @@ function ProjectContent() {
             theme === "light" ? "text-black" : "text-white"
           }`}
         >
-          Explore my little things
+          Explore My Projects
         </p>
       </div>
       <div className="w-full flex flex-col gap-4  md:flex md:flex-row">

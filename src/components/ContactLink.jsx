@@ -25,16 +25,24 @@ function ContactLink() {
             target="_blank"
           >
             <FaLinkedin
-              className={`size-[24px] hover:text-green-950
-              ${theme === "light" ? "text-black" : "text-white"}`}
+              className={`size-[24px] hover:text-[#00ed64]
+              ${
+                theme === "light"
+                  ? "text-black hover:text-green-950"
+                  : "text-white"
+              }`}
             />
           </a>
         </button>
         <button>
           <a href="https://github.com/Kulsayas" target="_blank">
             <FaGithub
-              className={`size-[24px] hover:text-green-950
-              ${theme === "light" ? "text-black" : "text-white"}`}
+              className={`size-[24px] hover:text-[#00ed64]
+              ${
+                theme === "light"
+                  ? "text-black hover:text-green-950"
+                  : "text-white"
+              }`}
             />
           </a>
         </button>
@@ -44,8 +52,12 @@ function ContactLink() {
           }}
         >
           <MdOutlineMarkEmailUnread
-            className={`size-[24px] hover:text-green-950
-              ${theme === "light" ? "text-black" : "text-white"}`}
+            className={`size-[24px] hover:text-[#00ed64]
+              ${
+                theme === "light"
+                  ? "text-black hover:text-green-950"
+                  : "text-white"
+              }`}
           />
         </button>
         <button

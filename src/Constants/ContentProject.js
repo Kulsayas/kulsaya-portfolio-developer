@@ -5,7 +5,7 @@ export const projectContent = [
     img: "/assets/Images/gameOnline.png",
     paragaph:
       "An Ecommerce platform for online game sales that allows users to view recommended games, browse the complete game catalog, and purchase games of interest.",
-    stack: "React,TailwindCSS ,NextUI.js, MongoDB, Express.js",
+    stack: "React,TailwindCSS ,NextUI, MongoDB, Express.js",
     content:
       "This project is an e-commerce website for selling online games. We chose to focus on games because of the team’s shared passion for gaming, allowing us to create something we truly enjoy. The website includes key features such as a Homepage, an All Games page, the ability to add games to the cart, remove them from the cart, and checkout using QR code scanning or credit card payment.",
     subContent:

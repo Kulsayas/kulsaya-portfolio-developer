@@ -7,8 +7,8 @@ export default function Profile() {
     <div className="">
       <div className="h-[200px] relative xl:h-[300px]">
         <img
-          className="rounded-lg w-[120px] absolute top-20 right-12 md:top-20 md:right-60 xl:w-[200px] xl:left-[50%]"
-          src="https://images.unsplash.com/photo-1731334725894-4dd2800b5d97?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          className="rounded-lg w-[120px] absolute top-10 right-12 md:top-10 md:right-60 xl:w-[200px] xl:left-[50%]"
+          src="/public/assets/Images/20191028_192705_IMG_1155.jpg"
           alt="image profile"
         />
       </div>
