@@ -1,6 +1,19 @@
 import { Accordion, AccordionItem } from "@nextui-org/react";
+import { useTheme } from "../context/ThemeContext";
+import { base, track } from "framer-motion/client";
+import { color } from "framer-motion";
 
 function WorkExperienceContent() {
+  const { theme } = useTheme();
+
+  const itemClasses = {
+    base: "py-0 px-0 w-full",
+    title: "font-normal text-medium px-3",
+    trigger: "bg-white rounded-t-sm pr-3",
+    indicator: "text-medium px-0",
+    content: "text-small bg-white px-3 rounded-b-sm bb-[-1px]",
+  };
+
   const defaultContent = [
     {
       company: "EASYRICE DIGITAL TECHNOLOGY",
@@ -35,22 +48,31 @@ function WorkExperienceContent() {
   ];
   return (
     <div className="text-left mt-[80px]">
-      <div className="text-[32px] font-bold">EXPERIENCES</div>
+      <div
+        className={`text-[32px] font-bitter font-semibold 
+          ${theme === "light" ? "text-black" : "text-white"}`}
+      >
+        EXPERIENCES
+      </div>
       {defaultContent.map((item, index) => (
         <div
-          className="mt-4 hover:shadow-xl shadow-black-500/40 cursor-pointer"
+          className={`mt-4 hover:shadow-xl shadow-black-500/40 cursor-pointer ${
+            theme === "light"
+              ? "text-black border-1 border-slate-500 rounded-xl"
+              : "text-white"
+          }`}
           key={index}
         >
-          <Accordion variant="shadow">
+          <Accordion itemClasses={itemClasses} variant="">
             <AccordionItem
               textValue={item.company}
               title={
                 <div className="flex items-center gap-4 justify-between">
                   <div className="flex-col text-left w-[55%] md:w-full">
-                    <p className="font-bold text-[14px] leading-4 xl:text-[16px]">
+                    <p className="text-black font-bold text-[14px] leading-4 xl:text-[16px]">
                       {item.company}
                     </p>
-                    <p className="text-[14px] leading-4 pt-2 xl:text-[16px]">
+                    <p className="text-gray-600 text-[14px] leading-4 pt-2 xl:text-[16px]">
                       {item.role}
                     </p>
                   </div>

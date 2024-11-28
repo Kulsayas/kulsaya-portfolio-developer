@@ -28,6 +28,15 @@
     format("woff2");
 }
 
+@font-face {
+  font-family: "Bitter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/bitter/v36/rax8HiqOu8IVPmn7f4xp.woff2)
+    format("woff2");
+}
+
 body {
   min-width: 100%;
   height: 100%;
@@ -48,12 +57,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: rgb(182, 182, 182);
+  background-color: #00ed64;
   border-radius: 10px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: rgb(156, 156, 156);
+  background-color: #00aa47;
 }
 
 .font-role {
@@ -71,4 +80,7 @@ body {
   margin-top: -70px;
   font-size: 50px;
   background-repeat: no-repeat;
+}
+.font-bitter {
+  font-family: "Bitter";
 }

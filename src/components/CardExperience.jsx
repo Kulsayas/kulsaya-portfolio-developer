@@ -2,6 +2,7 @@ import { MdSearch } from "react-icons/md";
 import { FiLayers } from "react-icons/fi";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import { LiaLaptopCodeSolid } from "react-icons/lia";
+import { useTheme } from "../context/ThemeContext";
 
 const cardExperinces = [
   {
@@ -31,13 +32,20 @@ const cardExperinces = [
 ];
 
 function CardExperience() {
+  const { theme } = useTheme();
+
   return (
     <div className="flex flex-col md:flex md:flex-row md:flex-wrap md:gap-3 md:pt-3 xl:gap-2 xl:flex xl:flex-row xl:justify-between xl:flex-nowrap">
       {cardExperinces.map((item, index) => (
         <div
           key={index}
-          className="w-full h-[280px] bg-white/20 rounded-lg p-4 text-left flex flex-col justify-between hover:border-1 border-slate-500 hover:shadow-xl shadow-black-500/40 cursor-pointer mt-5 md:w-[49%] md:mt-1
-          "
+          className={`w-full h-[280px] bg-white/20 rounded-lg p-4 text-left flex flex-col justify-between hover:border-1 border-slate-500 
+            hover:shadow-xl shadow-black-500/40 cursor-pointer mt-5 md:w-[49%] md:mt-1 
+            ${
+              theme === "light"
+                ? "text-black border-1 border-green-950 bg-[#d4f8e8]"
+                : "text-white"
+            }`}
         >
           <div>{item.icon}</div>
           <div>

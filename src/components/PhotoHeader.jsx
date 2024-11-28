@@ -1,6 +1,9 @@
 import SlideItem from "./SlideItem";
+import { useTheme } from "../context/ThemeContext";
 
 function PhotoHeader() {
+  const { theme } = useTheme();
+
   const Images = [
     "public/assets/Images/000049.JPG",
     "public/assets/Images/000060.JPG",
@@ -20,29 +23,53 @@ function PhotoHeader() {
   return (
     <div className="mt-[250px] leading-[36px]">
       <div className="flex items-center gap-2 justify-center">
-        <p className="text-[22px] font-topic-hobbie md:text-[40px]">I Love</p>
+        <p
+          className={`text-[22px] font-topic-hobbie md:text-[40px] ${
+            theme === "light" ? "text-black" : "text-white"
+          }`}
+        >
+          I Love
+        </p>
         <img
           src="public/assets/Images/4B04343B-E723-4A6C-BFCA-18F326CDBD96.jpg"
           alt="Image Film"
           className="rounded-md"
           width={50}
         />
-        <p className="text-[22px] font-topic-hobbie md:text-[40px]">
+        <p
+          className={`text-[22px] font-topic-hobbie md:text-[40px] ${
+            theme === "light" ? "text-black" : "text-white"
+          }`}
+        >
           Photography,
         </p>
       </div>
-      <p className="text-[22px] font-topic-hobbie md:text-[40px]">
+      <p
+        className={`text-[22px] font-topic-hobbie md:text-[40px] ${
+          theme === "light" ? "text-black" : "text-white"
+        }`}
+      >
         Here Are Some Photos
       </p>
       <div className="flex items-center gap-2  justify-center">
-        <p className="text-[22px] font-topic-hobbie md:text-[40px]">I</p>
+        <p
+          className={`text-[22px] font-topic-hobbie md:text-[40px] ${
+            theme === "light" ? "text-black" : "text-white"
+          }`}
+        >
+          I
+        </p>
         <img
           src="public/assets/Images/IMG_1262.JPEG"
           alt="Image Film"
           className="rounded-md"
           width={50}
         />
-        <p className="text-[20px] font-topic-hobbie md:text-[40px]">
+        <p
+          className={`text-[22px] font-topic-hobbie md:text-[40px] ${
+            theme === "light" ? "text-black" : "text-white"
+          }`}
+        >
           Captured...
         </p>
       </div>

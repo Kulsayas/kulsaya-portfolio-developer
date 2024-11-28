@@ -8,20 +8,32 @@ import { TbDatabaseSmile } from "react-icons/tb";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import { IoIosGitBranch } from "react-icons/io";
 import { SiPostman } from "react-icons/si";
+import { useTheme } from "../context/ThemeContext";
 
 function TabsSkills() {
+  const { theme } = useTheme();
+
   return (
     <div className="flex flex-col gap-4">
       <Tabs
         classNames={{
-          tabContent: "text-white",
+          tabContent: `text-white ${
+            theme === "light" ? "text-black" : "text-white"
+          }`,
         }}
-        color="default"
+        color="success"
         variant="light"
         aria-label="Options"
       >
         <Tab title="Contact" className="text-[16px]">
-          <Card className="bg-white/20 text-white hover:border-1 border-slate-500 hover:shadow-xl shadow-black-500/40 cursor-pointer">
+          <Card
+            className={`bg-white/20 text-whitehover:shadow-xl shadow-black-500/40 cursor-pointer 
+            ${
+              theme === "light"
+                ? "text-black border-1 border-slate-500"
+                : "text-white"
+            }`}
+          >
             <CardBody className="text-left gap-2 p-3">
               <div className="flex items-center gap-2">
                 <AiOutlineMail size={20} />:
@@ -56,7 +68,14 @@ function TabsSkills() {
           </Card>
         </Tab>
         <Tab title="Technical Skills" className="text-[16px]">
-          <Card className="bg-white/20 text-white hover:border-1 border-slate-500 hover:shadow-xl shadow-black-500/40 cursor-pointer">
+          <Card
+            className={`bg-white/20 text-whitehover:shadow-xl shadow-black-500/40 cursor-pointer 
+            ${
+              theme === "light"
+                ? "text-black border-1 border-slate-500"
+                : "text-white"
+            }`}
+          >
             <CardBody className="p-4">
               <div className="items-center gap-2">
                 <div className="mb-1">

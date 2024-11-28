@@ -3,9 +3,11 @@ import { Button } from "@nextui-org/button";
 import { useNavigate, useLocation } from "react-router-dom";
 import { useRef, useEffect } from "react";
 import { projectContent } from "../Constants/ContentProject";
+import { useTheme } from "../context/ThemeContext";
 
 function ProjectContent() {
   const navigate = useNavigate();
+  const { theme } = useTheme();
 
   const location = useLocation();
   const scrollToId = location.state?.scrollToId; // รับ scrollToId จาก state
@@ -20,8 +22,19 @@ function ProjectContent() {
   return (
     <>
       <div className="text-left mt-[100px]">
-        <div className="text-[32px] font-bold">SEE MY PROJECT</div>
-        <p className="leading-3">Explore my little things</p>
+        <div
+          className={`text-[32px] font-bitter font-semibold 
+        ${theme === "light" ? "text-black" : "text-white"}`}
+        >
+          SEE MY PROJECT
+        </div>
+        <p
+          className={`leading-3 ${
+            theme === "light" ? "text-black" : "text-white"
+          }`}
+        >
+          Explore my little things
+        </p>
       </div>
       <div className="w-full flex flex-col gap-4  md:flex md:flex-row">
         {projectContent.map((item) => (
@@ -30,7 +43,13 @@ function ProjectContent() {
             ref={(el) => (itemRefs.current[item.id] = el)}
             className="pt-[20px]"
           >
-            <div className="flex flex-col justify-between bg-white h-[435px] p-4 rounded-md hover:shadow-xl shadow-black-500/40 cursor-pointer xl:h-[460px]">
+            <div
+              className={`flex flex-col justify-between bg-white h-[435px] p-4 rounded-md hover:shadow-xl shadow-black-500/40 cursor-pointer xl:h-[460px] ${
+                theme === "light"
+                  ? "text-black border-1 border-green-950 bg-green-100/60"
+                  : "text-white"
+              }`}
+            >
               <div>
                 <img
                   src={item.img}

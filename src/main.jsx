@@ -6,13 +6,16 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import router from "./router";
 import Footer from "./components/Footer";
+import { ThemeProvider } from "./context/ThemeContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <NextUIProvider>
-      <Navbar />
-      <RouterProvider router={router} />
-      <Footer />
+      <ThemeProvider>
+        <Navbar />
+        <RouterProvider router={router} />
+        <Footer />
+      </ThemeProvider>
     </NextUIProvider>
   </React.StrictMode>
 );

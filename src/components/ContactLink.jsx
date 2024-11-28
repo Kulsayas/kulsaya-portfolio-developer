@@ -2,8 +2,11 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { MdOutlineMarkEmailUnread } from "react-icons/md";
 import { LuDownload } from "react-icons/lu";
+import { useTheme } from "../context/ThemeContext";
 
 function ContactLink() {
+  const { theme } = useTheme();
+
   const downloadResume = () => {
     const link = document.createElement("a");
     link.href = "/assets/KulsayaResume.pdf";
@@ -21,12 +24,18 @@ function ContactLink() {
             href="https://www.linkedin.com/in/kulsaya-seenual/"
             target="_blank"
           >
-            <FaLinkedin className="size-[24px] hover:text-[#00ed64]" />
+            <FaLinkedin
+              className={`size-[24px] hover:text-green-950
+              ${theme === "light" ? "text-black" : "text-white"}`}
+            />
           </a>
         </button>
         <button>
           <a href="https://github.com/Kulsayas" target="_blank">
-            <FaGithub className="size-[24px] hover:text-[#00ed64]" />
+            <FaGithub
+              className={`size-[24px] hover:text-green-950
+              ${theme === "light" ? "text-black" : "text-white"}`}
+            />
           </a>
         </button>
         <button
@@ -34,7 +43,10 @@ function ContactLink() {
             window.location.href = "mailto:Kulsaya.see@gmail.com";
           }}
         >
-          <MdOutlineMarkEmailUnread className="size-[24px] hover:text-[#00ed64]" />
+          <MdOutlineMarkEmailUnread
+            className={`size-[24px] hover:text-green-950
+              ${theme === "light" ? "text-black" : "text-white"}`}
+          />
         </button>
         <button
           onClick={() => downloadResume()}
