@@ -8,7 +8,7 @@ export default function Profile() {
       <div className="h-[200px] relative xl:h-[300px]">
         <img
           className="rounded-lg w-[120px] absolute top-10 right-12 md:top-10 md:right-60 xl:w-[200px] xl:left-[50%]"
-          src="/public/assets/Images/20191028_192705_IMG_1155.jpg"
+          src="/assets/Images/amgrad.jpg"
           alt="image profile"
         />
       </div>
