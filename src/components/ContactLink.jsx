@@ -35,7 +35,10 @@ function ContactLink() {
           </a>
         </button>
         <button>
-          <a href="https://github.com/Kulsayas" target="_blank">
+          <a
+            href="https://github.com/Kulsayas/kulsaya-portfolio-developer.git"
+            target="_blank"
+          >
             <FaGithub
               className={`size-[24px] hover:text-[#00ed64]
               ${
