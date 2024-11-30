@@ -10,6 +10,7 @@ export const projectContent = [
       "This project is an e-commerce website for selling online games. We chose to focus on games because of the team’s shared passion for gaming, allowing us to create something we truly enjoy. The website includes key features such as a Homepage, an All Games page, the ability to add games to the cart, remove them from the cart, and checkout using QR code scanning or credit card payment.",
     subContent:
       "This project follows Agile methodology, with tasks divided into sprints. Currently, the front-end development has been completed as part of Sprint 2. We are now learning back-end development and database management, which will be applied to enhance the project in the upcoming sprints.",
+    github: "https://github.com/Kulsayas/project-onlinegame-front-end.git",
   },
   {
     id: 2,
@@ -20,5 +21,7 @@ export const projectContent = [
     stack: "React, React rounter, TailwindCSS ",
     content:
       "This is a small practice project built using React Router to manage navigation and access control, ensuring employee data is consistent across all parts of the application. This feature allows creating or deleting employee records through both the User Interface and Admin Interface, with updates synchronized between the two.",
+    github:
+      "https://github.com/Kulsayas/react-end-of-module-assessment-13-kulsaya",
   },
 ];

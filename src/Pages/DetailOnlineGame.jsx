@@ -80,6 +80,11 @@ function DetailOnlineGame() {
           >
             {content.subContent}
           </p>
+          <button className="flex px-3 py-3 bg-[#00ed64] text-black rounded-md gap-1 items-center text-[14px] h-9 hover:rounded-full">
+            <a href={content.github} target="_blank">
+              View on GitHub
+            </a>
+          </button>
         </div>
       }
     </div>

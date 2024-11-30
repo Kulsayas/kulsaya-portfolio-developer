@@ -9,7 +9,7 @@ function ContactLink() {
 
   const downloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/assets/KulsayaResume.pdf";
+    link.href = "/assets/ResumeKulsaya.pdf";
     link.download = "KulsayaResume";
     document.body.appendChild(link);
     link.click();
