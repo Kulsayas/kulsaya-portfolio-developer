@@ -30,7 +30,7 @@ function GenerationContent() {
         </p>
 
         <div
-          className={`flex flex-col mt-6 gap-3 text-justify  ${
+          className={`flex flex-col mt-6 gap-3  ${
             theme === "light" ? "text-black" : "text-white"
           }`}
         >
