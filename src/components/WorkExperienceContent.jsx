@@ -17,7 +17,7 @@ function WorkExperienceContent() {
   const defaultContent = [
     {
       company: "EASYRICE DIGITAL TECHNOLOGY",
-      date: "Sep 2023 - May 2024",
+      date: "Aug 2023 - May 2024",
       role: "UX/UI Designer",
       description: [
         "Gathered requirements from Product Owners (PO) and designed wireframes to ensure user-friendliness while meeting customer specifications.",
