@@ -3,7 +3,7 @@ import { useTheme } from "../context/ThemeContext";
 function Aboutme() {
   const { theme } = useTheme();
   return (
-    <div className="mt-[275px]">
+    <div className="mt-[320px]">
       <div
         className={`text-left text-[28px] font-bitter font-semibold 
         ${theme === "light" ? "text-black" : "text-white"}`}

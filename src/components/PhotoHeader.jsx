@@ -14,7 +14,6 @@ function PhotoHeader() {
     "/assets/Images/newyear2.jpg",
     "/assets/Images/lakefilm.jpg",
     "/assets/Images/newyear5.jpg",
-    "/assets/Images/lampangroad.jpg",
     "/assets/Images/ohmgrad.jpg",
     "/assets/Images/sunsetfilm.jpg",
     "/assets/Images/inbangmod.jpg",

@@ -43,7 +43,7 @@ function CardExperience() {
             hover:shadow-xl shadow-black-500/40 cursor-pointer mt-5 md:w-[49%] md:mt-1 
             ${
               theme === "light"
-                ? "text-black border-1 border-green-950 bg-[#D4F8E8]"
+                ? "text-black border-1 border-green-950 bg-green-100"
                 : "text-white"
             }`}
         >
