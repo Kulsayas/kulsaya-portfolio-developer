@@ -75,7 +75,7 @@ function DetailOnlineGame() {
             {content.content}
           </p>
           <p
-            className={`py-5 text-[14px] xl:text-[16px] 
+            className={`py-5 xl:text-[16px] 
               ${theme === "light" ? "text-black" : "text-white"}`}
           >
             {content.subContent}

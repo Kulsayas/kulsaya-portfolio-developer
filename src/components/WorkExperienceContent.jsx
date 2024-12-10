@@ -21,9 +21,8 @@ function WorkExperienceContent() {
       role: "UX/UI Designer",
       description: [
         "Gathered requirements from Product Owners (PO) and designed wireframes to ensure user-friendliness while meeting customer specifications.",
-        "Collaborated with development teams to find optimal solutions and conducted UAT testing before deploying projects.",
-        "Conducted interview tests with customers and engaged in preliminary research to gather feedback on new features.",
-        "Skills Gained from Work Experience include User Research, User Interviews, Wireframing, A/B Testing, and Usability Testing.",
+        "Conducted user research to gather insights, directly informing design decisions and boosting team efficiency and user experience.",
+        "Collaborated with developer teams to find optimal solutions and conducted UAT testing before deploying projects.",
       ],
     },
     {
@@ -31,8 +30,8 @@ function WorkExperienceContent() {
       date: "Sep 2022 - Dec 2022",
       role: "Research & Development",
       description: [
-        "Design, supervision, production, and collection of experimental data to summarize the development of new packaging.",
-        "Providing technical support and recommendations to sales and  other relevant departments in relation to work.",
+        "Designed and supervised production, collecting experimental data to evaluate new packaging development. Presented results to the sales team and relevant departments, verifying if outcomes met requirements and analyzing material trends based on customer preferences.",
+        "Provided technical support and recommendations to the sales team to ensure clear communication of results with clients.",
       ],
     },
     {
@@ -40,9 +39,9 @@ function WorkExperienceContent() {
       date: "July 2019 - Aug 2022",
       role: "New Product Development",
       description: [
-        "Receive customer requests from tha sales team during the printing process. Planning to facilitate the production process and check quality to the customer’s standards and requirements.",
-        "Explain the limitations of the printing process to customers and sales.",
-        "support customer when they come to see the real printing process and find solution when a product doesn’t meet customer requirements. ",
+        "Managed customer requests during the printing process, planning and ensuring production met quality standards and customer requirements, resulting in a reduction in print preparation time.",
+        "Explained the limitations of the printing process to customers and the sales team to improve understanding and reduce miscommunication.",
+        "Supported customers during site visits to the printing process, providing solutions when products didn’t meet their requirements, enhancing customer satisfaction.",
       ],
     },
   ];

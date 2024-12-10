@@ -12,14 +12,16 @@ function Aboutme() {
       </div>
       <div className="text-left mt-3">
         <p
-          className={`mt-4 xl:text-[20px] xl:mt-2
+          className={`mt-4 xl:text-[20px] xl:mt-2 tracking-wide
           ${theme === "light" ? "text-black" : "text-white"}`}
         >
-          I'm now focused on becoming a Full-Stack Developer and currently
-          studying at the Generation Thailand Bootcamp. I am leveraging my
-          design expertise to build user-centric, efficient digital solutions.
-          My goal is to deliver end-to-end products that are both comprehensive
-          and user-friendly.
+          Detail-oriented and analytical problem-solver with 3+ years of
+          experience in R&D and 8 months in UI/UX design, transitioning into a
+          software development career. Proven ability to manage projects, meet
+          deadlines, and collaborate effectively. Equipped with a foundation in
+          software full stack development, seeking a full stack developer role
+          to apply my skills and contribute to a collaborative team, building
+          end-to-end, user-centric software products.
         </p>
       </div>
     </div>
