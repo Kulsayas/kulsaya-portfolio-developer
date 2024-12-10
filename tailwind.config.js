@@ -1,6 +1,6 @@
 import { nextui } from "@nextui-org/react";
 /** @type {import('tailwindcss').Config} */
-module.exports = {
+export default {
   darkMode: "selector",
   content: [
     "./src/**/*.{html,js,jsx,ts,tsx}",
